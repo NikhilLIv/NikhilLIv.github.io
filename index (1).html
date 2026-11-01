@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nikhil Vatsa · Applied Mathematics, Quantitative Finance &amp; Optimization</title>
+<style>
+:root{--bg:#fbfaf7;--surface:#ffffff;--text:#1d2330;--muted:#5d6678;--line:#e4e1d8;--accent:#1f4fd8;--accent-soft:#e8eefc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--surface:#1a1e28;--text:#e8eaf0;--muted:#9aa3b5;--line:#2b3140;--accent:#7ea2ff;--accent-soft:#1f2a47;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12151c;--surface:#1a1e28;--text:#e8eaf0;--muted:#9aa3b5;--line:#2b3140;--accent:#7ea2ff;--accent-soft:#1f2a47;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,nav,.tag,.btn,.meta{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.brand{font-weight:700;font-size:15px;color:var(--text);text-decoration:none}
+nav a{margin-left:18px;font-size:14px;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 40px}
+.hero h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+.hero p.lead{font-size:20px;color:var(--muted);margin:0 0 26px;max-width:620px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+section h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:18px}
+.card h3{margin:0 0 6px;font-size:20px}
+.card p{margin:8px 0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.tag{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.meta{font-size:13px;color:var(--muted)}
+.todo{border-style:dashed;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.grid .card{margin:0;padding:18px}
+.grid h3{font-size:16px}
+.grid ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="#top">Nikhil Vatsa</a>
+<nav><a href="#projects">Projects</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap" id="top">
+<div class="hero">
+<h1>Hi, I’m Nikhil Vatsa.</h1>
+<p class="lead">Master’s student in applied and computational mathematics, with four years of banking experience in data engineering. I’m interested in quantitative finance, stochastic modeling, and optimization.</p>
+<div class="btns">
+<a class="btn primary" href="#projects">See my projects</a>
+<a class="btn" href="#contact">Get in touch</a>
+</div>
+</div>
+
+<section id="projects">
+<h2>Selected projects</h2>
+
+<article class="card">
+<h3>Option pricing: Black–Scholes vs. a neural network</h3>
+<div class="meta">Python · Monte Carlo simulation · neural networks</div>
+<p><strong>Question:</strong> how well can a neural network learn European call prices compared with the closed-form Black–Scholes–Merton (BSM) model?</p>
+<p><strong>Approach:</strong> I simulated stock price paths with geometric Brownian motion, computed call prices under BSM, and trained a neural network on the simulated data to predict option prices.</p>
+<p><strong>Result:</strong> Add your headline finding here, for example the pricing error of each approach and where the network struggles (deep out-of-the-money options, short maturities).</p>
+<div class="tags"><span class="tag">GBM</span><span class="tag">Black–Scholes</span><span class="tag">PyTorch / TensorFlow</span></div>
+<p class="meta"><a href="#">Code on GitHub</a> · <a href="#">Write-up</a></p>
+</article>
+
+<article class="card todo">
+<h3>Your optimization project (coming soon)</h3>
+<p>Idea: a portfolio optimization, routing, or scheduling problem solved with linear or integer programming. Show the model, the solver, and what the solution means in practice.</p>
+</article>
+
+<article class="card todo">
+<h3>Your numerical methods project (coming soon)</h3>
+<p>Idea: implement and compare ODE or PDE solvers from your coursework, with accuracy and runtime plots.</p>
+</article>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<p>I’m pursuing a master’s degree in applied and computational mathematics. Before that, I spent about four years at a bank working on the lending side as a data engineer, building data pipelines in Python and SQL. I also completed Columbia University’s Financial Engineering specialization.</p>
+<p>I enjoy turning mathematical models into working code, and I’m now looking for quantitative research roles where I can combine the two.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Mathematics</h3><ul><li>Stochastic processes</li><li>Numerical methods</li><li>Optimization</li></ul></div>
+<div class="card"><h3>Programming</h3><ul><li>Python (4+ years)</li><li>SQL (4+ years)</li><li>Data pipelines</li></ul></div>
+<div class="card"><h3>Finance</h3><ul><li>Derivatives pricing</li><li>Financial engineering</li><li>Banking and lending data</li></ul></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>I’m happy to talk about quant research, optimization, or collaboration.</p>
+<div class="btns">
+<a class="btn primary" href="mailto:vatsanikhil@gmail.com">vatsanikhil@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/nikhil-vatsa-quant-or/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/NikhilLIv" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="#">Download CV (PDF)</a>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Nikhil Vatsa<p style="margin:12px 0 0;max-width:620px"><strong>A note on how this site was made:</strong> I built this page with the help of Claude, an AI assistant from Anthropic. Claude helped with the layout and code and with drafting the text, and I supplied the content and checked it before publishing. The projects, background, and views described here are my own.</p></div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
